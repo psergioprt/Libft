@@ -1,0 +1,2 @@
+git config --global user.email "xpto@xpto.com"
+git config --global user.user "user_name"
