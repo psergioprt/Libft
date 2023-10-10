@@ -1,42 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/10 11:34:28 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/10 15:52:06 by pauldos-         ###   ########.fr       */
+/*   Created: 2023/10/10 14:57:30 by pauldos-          #+#    #+#             */
+/*   Updated: 2023/10/10 15:36:55 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 {
 	size_t	i;
+	size_t	j;
 
-	if (!dstsize)
-		return (ft_strlen(src));
 	i = 0;
-	while (src[i] && i < dstsize - 1)
-	{
-		dest[i] = src[i];
+	j = 0;
+	while (dest[i])
 		i++;
+	if (destsize < i)
+	{
+		while (src[j])
+			j++;
+		return (destsize + j);
 	}
+	while (destsize > 0 && i < destsize - 1 && src[j])
+		dest[i++] = src[j++];
 	dest[i] = '\0';
-	return (ft_strlen(src));
+	while (src[j++])
+		i++;
+	return (i);
 }
 
 /*#include <stdio.h>
 
 int	main(void)
 {
-	size_t	i = 7;
-	char	src[] = "Hello World";
-	char	dest[50];
+	char first[] = "Hello";
+	char last[] = "World";
+	int r;
+	size_t size = 12;
 
-	int a = ft_strlcpy(dest, src, i);
-	printf("Myfunc: string: %s size: %d\n", dest, a);
+	r = ft_strlcat(first, last, size);
+	printf("Concatenated '%s' * length %d\n", first, r);
 	return (0);
 }*/

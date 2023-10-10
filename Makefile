@@ -19,7 +19,8 @@ OBJ	= ft_bzero.o \
 	ft_toupper.o \
 	ft_memcpy.o \
 	ft_memmove.o \
-	ft_strlcpy.o
+	ft_strlcpy.o \
+	ft_strlcat.o
 
 
 all: $(NAME)
