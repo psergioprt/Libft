@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 12:59:41 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/10 15:02:14 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/11 10:55:40 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,8 @@ int		ft_isprint(int c);
 int		ft_strlen(const char *str);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 
 #endif
