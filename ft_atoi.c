@@ -1,50 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 12:50:25 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/13 07:38:36 by pauldos-         ###   ########.fr       */
+/*   Created: 2023/10/13 10:57:04 by pauldos-          #+#    #+#             */
+/*   Updated: 2023/10/13 11:54:25 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int	ft_atoi(const char *str)
 {
-	unsigned char	*str;
-	size_t			i;
-	unsigned char	uc;
+	int	num;
+	int	sign;
+	int	i;
 
-	str = (unsigned char *)s;
-	uc = (unsigned char) c;
+	num = 0;
+	sign = 1;
 	i = 0;
-	while (i < n)
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+		i++;
+	if (str[i] == '+')
+		i++;
+	else if (str[i] == '-')
 	{
-		if (str[i] == uc)
-			return ((void *) &str[i]);
+		sign = -1;
 		i++;
 	}
-	return (NULL);
+	while ((str[i] >= '0' && str[i] <= '9') && str[i] != '\0')
+	{
+		num = (num * 10) + str[i] - '0';
+		i++;
+	}
+	return (num * sign);
 }
 /*
 #include <stdio.h>
-#include <string.h>
 
-int	main(void)
+int	main(int argc, char *argv[])
 {
-	char str[] = "name .user";
-	char a = '.';
-	char *ret;
-	char *sys_ret;
-
-	ret = ft_memchr(str, a, 6);
-	sys_ret = memchr(str, a, 6);
-
-
-	printf("Myfunc: %s\n", ret);
-	printf("Sysfunc: %s\n", sys_ret);
+	if (argc == 2)
+	{
+		printf("Myfunc: %d\n", ft_atoi(argv[1]));
+		printf("Sysfunc: %d\n", atoi(argv[1]));
+	}
 	return (0);
 }*/

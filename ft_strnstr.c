@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 12:50:25 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/13 07:38:36 by pauldos-         ###   ########.fr       */
+/*   Created: 2023/10/13 08:30:02 by pauldos-          #+#    #+#             */
+/*   Updated: 2023/10/13 10:21:07 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	unsigned char	*str;
-	size_t			i;
-	unsigned char	uc;
+	size_t	h;
 
-	str = (unsigned char *)s;
-	uc = (unsigned char) c;
-	i = 0;
-	while (i < n)
+	if (!big && !len)
+		return (NULL);
+	if (!*little)
+		return ((char *)big);
+	while (*big && len--)
 	{
-		if (str[i] == uc)
-			return ((void *) &str[i]);
-		i++;
+		h = 0;
+		while (*(big + h) == *(little + h)
+			&& *(little + h) && h <= len)
+		{
+			if (!*(little + h + 1))
+				return ((char *)big);
+			h++;
+		}
+		big++;
 	}
 	return (NULL);
 }
@@ -35,16 +40,10 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 int	main(void)
 {
-	char str[] = "name .user";
-	char a = '.';
-	char *ret;
-	char *sys_ret;
+	char 	str[] = "My name is Lucas";
+	char 	str2[] = "is";
+	char 	*myfunc = ft_strnstr(str, str2, 10);
 
-	ret = ft_memchr(str, a, 6);
-	sys_ret = memchr(str, a, 6);
-
-
-	printf("Myfunc: %s\n", ret);
-	printf("Sysfunc: %s\n", sys_ret);
+	printf("Myfunc: %s\n", myfunc);
 	return (0);
 }*/
