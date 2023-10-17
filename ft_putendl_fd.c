@@ -6,7 +6,7 @@
 /*   By: pauldos- <pauldos-@student.42porto.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:43:26 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/17 11:48:14 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/17 11:55:28 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,15 @@ void	ft_putendl_fd(char *s, int fd)
 	i = 0;
 	while (s[i])
 	{
-		write (fd, &s, 1);
+		write (fd, &s[i], 1);
 		i++;
 	}
 	write (fd, "\n", 1);
 }
-
+/*
 int	main(void)
 {
 	char	s[] = "Lucas";
 	ft_putendl_fd(s, 1);
 	return (0);
-}
+}*/
