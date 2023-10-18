@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 12:59:41 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/18 09:43:28 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:22:18 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif
