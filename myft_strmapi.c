@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   myft_strmapi.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psergioprt <marvin@42.fr>                  +#+  +:+       +#+        */
+/*   By: pauldos- <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 23:28:45 by psergiopr         #+#    #+#             */
-/*   Updated: 2023/10/20 23:28:49 by psergiopr        ###   ########.fr       */
+/*   Created: 2023/10/20 23:28:45 by pauldos-         #+#    #+#             */
+/*   Updated: 2023/10/21 23:53:55 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -27,12 +26,12 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	while (s[i])
 	{
 		str[i] = f(i, s[i]);
-		i++;	
+		i++;
 	}
 	str[i] = '\0';
 	return (str);
 }
-
+/*
 char	myfunc(unsigned int i, char str)
 {
 	printf("[%d] = %c\n", i, str);
@@ -49,4 +48,4 @@ int	main(int argc, char *argv[])
 		printf("After strmapi: %s\n", ft_strmapi(argv[1], myfunc));	
 	}
 	return (0);
-}
+}*/

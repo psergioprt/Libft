@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   myft_bzero.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psergioprt <marvin@42.fr>                  +#+  +:+       +#+        */
+/*   By: pauldos- <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 18:55:10 by psergiopr         #+#    #+#             */
-/*   Updated: 2023/10/21 19:03:53 by psergiopr        ###   ########.fr       */
+/*   Created: 2023/10/21 18:55:10 by pauldos-         #+#    #+#             */
+/*   Updated: 2023/10/21 23:49:48 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	myft_bzero(void *s, size_t n)
 	}
 }
 
-#include <strings.h>
+/*#include <strings.h>
 
 int	main(void)
 {
@@ -37,4 +37,4 @@ int	main(void)
 	printf("%s\n", str);
 	printf("%s\n", str2);
 	return (0);
-}
+}*/

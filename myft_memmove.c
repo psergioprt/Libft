@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   myft_memmove.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pauldos- <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/10 10:30:50 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/21 21:13:07 by psergiopr        ###   ########.fr       */
+/*   Created: 2023/10/21 20:45:57 by pauldos-         #+#    #+#             */
+/*   Updated: 2023/10/21 20:48:05 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,43 +14,36 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	*s;
-	char	*d;
-	size_t	i;
+	unsigned char	*d;
+	unsigned char	*s;
+	unsigned char	temp;
 
-	s = (char *)src;
-	d = (char *)dest;
+	d = (unsigned char *) dest;
+	s = (unsigned char *) src;
 	if (!dest && !src)
 		return (0);
-	i = 0;
-	if (d > s)
-		while (n-- > 0)
-			d[n] = s[n];
-	else
+	while (n > 0)
 	{
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
+		temp = *s;
+		*d = temp;
+		s++;
+		d++;
+		n--;
 	}
 	return (dest);
 }
 /*
-#include <stdio.h>
 #include <string.h>
 
 int	main(void)
 {
-	size_t n = 7;
+	char	dest[] = "My name is Lucas";
+	char	dest2[] = "My name is Lucas";
+	char	src[] = "Door";
+	char	src2[] = "Door";
 
-	char src[] = "Hello World";
-	char dest[50];
-	char src2[] = "Hello World";
-	char dest2[50];
-
-	ft_memmove(dest, src, n);
-	memmove(dest2, src2, n);
+	myft_memmove (dest, src, 8);
+	memmove (dest2, src2, 8);
 	printf("Myfunc: %s\n", dest);
 	printf("Sysfunc: %s\n", dest2);
 	return (0);

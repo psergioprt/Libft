@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   myft_memset.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psergioprt <marvin@42.fr>                  +#+  +:+       +#+        */
+/*   By: pauldos- <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 16:56:00 by psergiopr         #+#    #+#             */
-/*   Updated: 2023/10/21 18:44:13 by psergiopr        ###   ########.fr       */
+/*   Created: 2023/10/21 16:56:00 by pauldos-         #+#    #+#             */
+/*   Updated: 2023/10/21 23:48:30 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*myft_memset(void *s, int c, size_t n)
 {
-	unsigned char *ptr;
+	unsigned char	*ptr;
 
 	ptr = (unsigned char *) s;
 	while (n > 0)
@@ -25,7 +25,7 @@ void	*myft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
+/*
 int	main(void)
 {
 	char	str[] = "My name is Lucas";
@@ -33,4 +33,4 @@ int	main(void)
 	myft_memset(str, '+', 8);
 	printf("After memset: %s\n", str);
 	return (0);
-}
+}*/
