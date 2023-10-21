@@ -6,7 +6,7 @@
 /*   By: pauldos- <pauldos-@student.42porto.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 11:43:16 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/18 15:53:53 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/20 23:17:16 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,14 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
-char lower_to_upper(unsigned int i, char str)
+char	lower_to_upper(unsigned int i, char str)
 {
 	printf("i[%d] = %c\n", i, str);
-
 	if (str >= 'a' && str <= 'z')
 		return (str - 'a' + 'A');
 	return (str);
 }
-
+/*
 int main()
 {
  	char str[10] = "he12lo.";
@@ -49,4 +48,4 @@ int main()
  	printf("After strmapi: %s\n", result);
 	free(result);
  	return 0;
-}
+}*/

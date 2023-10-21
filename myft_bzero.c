@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   myft_bzero.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psergioprt <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 10:40:59 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/21 19:04:37 by psergiopr        ###   ########.fr       */
+/*   Created: 2023/10/21 18:55:10 by psergiopr         #+#    #+#             */
+/*   Updated: 2023/10/21 19:03:53 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	myft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
 
-	ptr = (unsigned char *)s;
+	ptr = (unsigned char *) s;
 	while (n > 0)
 	{
 		*ptr = '\0';
@@ -24,31 +24,17 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
-/*
+
 #include <strings.h>
 
 int	main(void)
 {
-	char n[50];
-	char p[50];
+	char	str[] = "My name is Lucas";
+	char	str2[] = "My name is Lucas";
 
-	int	i;
-	int	j;
-
-	ft_bzero(n, 50);
-	while (i < 50)
-	{
-		printf("%d", n[i]);
-		i++;
-	}
-	putchar('\n');
-	puts("----------------");
-	printf("%s", n);
-	bzero(p, 50);
-	while (j < 50)
-	{
-		printf("%d", n[j]);
-		j++;
-	}
+	myft_bzero(str, 4);
+	bzero(str2, 4);
+	printf("%s\n", str);
+	printf("%s\n", str2);
 	return (0);
-}*/
+}
