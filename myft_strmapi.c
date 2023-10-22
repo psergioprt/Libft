@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 23:28:45 by pauldos-         #+#    #+#             */
-/*   Updated: 2023/10/21 23:53:55 by psergiopr        ###   ########.fr       */
+/*   Updated: 2023/10/22 15:13:17 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		printf("Before strmapi: %s\n", argv[1]);
-		printf("After strmapi: %s\n", ft_strmapi(argv[1], myfunc));	
+		printf("After strmapi: %s\n", ft_strmapi(argv[1], myfunc));
 	}
 	return (0);
 }*/

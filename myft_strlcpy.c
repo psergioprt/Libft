@@ -1,42 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   myft_strlcpy.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pauldos- <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/22 14:03:17 by pauldos-         #+#    #+#             */
-/*   Updated: 2023/10/22 15:06:36 by psergiopr        ###   ########.fr       */
+/*   Created: 2023/10/22 11:47:01 by pauldos-         #+#    #+#             */
+/*   Updated: 2023/10/22 14:00:12 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	myft_strlcpy(char *dest, const char *src, size_t size)
 {
 	unsigned int	i;
-	unsigned int	j;
 
-	i = ft_strlen(dst);
-	j = 0;
-	if (size <= i)
-		return (size + ft_strlen(src));
-	while (src[j] && i + j < (size - 1))
+	if (!dest)
+		return (ft_strlen(src));
+	while (src[i] && i < size - 1)
 	{
-		dst[i + j] = src[j];
-		j++;
+		dest[i] = src[i];
+		i++;
 	}
-	dst[i + j] = '\0';
-	return (ft_strlen(src) + i);
+	dest[i] = '\0';
+	return (ft_strlen(src));
 }
 /*
 int	main (void)
 {
-	char	str1[] = "My name is Lucas ";
-	char	str2[] = "And i am a musitian";
-	unsigned int	size = 40;
-	int	a = myft_strlcat(str1, str2, size);
-
-	printf("%s * %d\n", str1, a);
+	char	src[] = "1234567890";
+	char	dst[50];
+	unsigned int	n = 6;
+	int	a = myft_strlcpy(dst, src, n);
+	
+	printf("%s * %d\n", dst, a);
 	return (0);
 }*/
