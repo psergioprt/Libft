@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 14:56:36 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/09 11:43:51 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 14:26:37 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	ft_toupper(int c)
 	return (c);
 }
 /*
-#include <stdio.h>
 #include <ctype.h>
 
 int	main(int argc, char *argv[])

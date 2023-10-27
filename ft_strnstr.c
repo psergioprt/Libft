@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 08:30:02 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/13 10:21:07 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 14:21:48 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 /*
-#include <stdio.h>
 #include <string.h>
 
 int	main(void)
 {
-	char 	str[] = "My name is Lucas";
+	char 	str[] = "My name is Luka";
 	char 	str2[] = "is";
 	char 	*myfunc = ft_strnstr(str, str2, 10);
 

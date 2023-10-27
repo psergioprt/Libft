@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 07:54:57 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/13 08:14:05 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 13:54:48 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 /*
-#include <stdio.h>
 #include <string.h>
 
 int	main(void)

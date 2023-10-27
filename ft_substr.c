@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pauldos- <pauldos-@student.42porto.co      +#+  +:+       +#+        */
+/*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 12:29:03 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/16 17:14:17 by pauldos-         ###   ########.fr       */
+/*   Created: 2023/10/27 14:25:08 by pauldos-          #+#    #+#             */
+/*   Updated: 2023/10/27 14:25:18 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (str);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
-	char	str[] = "My name is Lucas";
+	char	str[] = "My name is Luka";
 
 	int	m;
 	int	n;

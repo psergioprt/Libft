@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 11:34:28 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/10 15:52:06 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 14:15:41 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 	return (ft_strlen(src));
 }
 
-/*#include <stdio.h>
-
+/*
 int	main(void)
 {
 	size_t	i = 7;

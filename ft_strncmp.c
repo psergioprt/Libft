@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 12:15:16 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/12 11:26:05 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 14:20:38 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+//OR
 /*	unsigned int	i;
 
 	i = 0;
@@ -41,7 +42,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }*/
 /*
-#include <stdio.h>
 #include <string.h>
 
 int	main(void)

@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 14:54:21 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/09 11:48:09 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 14:25:50 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	ft_tolower(int c)
 	return (c);
 }
 /*
-#include <stdio.h>
 #include <ctype.h>
 
 int	main(int argc, char *argv[])

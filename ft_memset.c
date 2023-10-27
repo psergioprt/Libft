@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 15:26:27 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/09 11:49:10 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 13:57:01 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ void	*ft_memset(void *s, int c, size_t n)
 	 * 	*(ptr++) = (unsigned char)c;
 	*/
 /*
-#include <stdio.h>
 #include <string.h>
 
 int	main (void)

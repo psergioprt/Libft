@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 15:52:48 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/09 11:41:48 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 13:47:15 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-/*#include <stdio.h>
+/*
 #include <ctype.h>
 
 int	main(int argc, char *argv[])

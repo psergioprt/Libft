@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 10:56:37 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/09 11:45:29 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 13:46:49 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
-/*#include <stdio.h>
+/*
 #include <ctype.h>
 
 int	main(int argc, char *argv[])

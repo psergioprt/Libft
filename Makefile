@@ -17,7 +17,7 @@ SRC	= ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 
 OBJ	= $(SRC:.c=.o)
 
-BONUS	= ft_lstnew.c \
+BONUS	= ft_lstnew.c
 
 OBJ_BONUS = $(BONUS:.c=.o)
 
@@ -36,7 +36,7 @@ fclean: clean
 	$(RM) $(RMFLAGS) $(NAME)
 
 bonus: $(OBJ) $(OBJ_BONUS)
-	$(AR) $(ARFLAGS) $@ $(NAME) $(OBJ) $(OBJ_BONUS)
+	$(AR) $(ARFLAGS) $(NAME) $(OBJ) $(OBJ_BONUS)
 
 re: fclean all
 

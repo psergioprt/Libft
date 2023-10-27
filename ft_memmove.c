@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 10:30:50 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/21 21:13:07 by psergiopr        ###   ########.fr       */
+/*   Updated: 2023/10/27 13:56:38 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 /*
-#include <stdio.h>
 #include <string.h>
 
 int	main(void)

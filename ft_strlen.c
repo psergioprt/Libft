@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 14:51:08 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/09 13:11:25 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 14:16:31 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ int	ft_strlen(const char *str)
 	return (i);
 }
 /*
-#include <stdio.h>
 #include <string.h>
 
 int	main(int argc, char *argv[])

@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 10:27:34 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/11 10:51:14 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 14:23:04 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,9 @@ char	*ft_strrchr(const char *s, int c)
 	return (p);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
-	char	str[] = "Mein name ist Paul";
+	char	str[] = "My name is Luka";
 	char	a = 'i';
 	char	*b = ft_strrchr(str, a);
 

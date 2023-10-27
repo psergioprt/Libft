@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pauldos- <pauldos-@student.42porto.co      +#+  +:+       +#+        */
+/*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 08:19:29 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/17 10:11:03 by pauldos-         ###   ########.fr       */
+/*   Created: 2023/10/27 14:13:23 by pauldos-          #+#    #+#             */
+/*   Updated: 2023/10/27 14:14:20 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,11 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	return (dst);
 }
 
-/*#include <stdio.h>
-
+/*
 int	main(void)
 {
 	char	str1[] = "My name ";
-	char	str2[] = "is Lucas";
+	char	str2[] = "is Luka";
 	char	*a = ft_strjoin(str1, str2);
 	printf("%s\n", a);
 	return (0);

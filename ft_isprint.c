@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 14:44:25 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/09 11:42:35 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 13:49:13 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_isprint(int c)
 	return (0);
 }
 /*
-#include <stdio.h>
 #include <ctype.h>
 
 int	main(int argc, char *argv[])

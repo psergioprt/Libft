@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pauldos- <pauldos-@student.42porto.co      +#+  +:+       +#+        */
+/*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 11:43:16 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/20 23:17:16 by psergiopr        ###   ########.fr       */
+/*   Created: 2023/10/27 14:17:38 by pauldos-          #+#    #+#             */
+/*   Updated: 2023/10/27 14:18:32 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
+/*
 char	lower_to_upper(unsigned int i, char str)
 {
 	printf("i[%d] = %c\n", i, str);
@@ -39,7 +39,7 @@ char	lower_to_upper(unsigned int i, char str)
 		return (str - 'a' + 'A');
 	return (str);
 }
-/*
+
 int main()
 {
  	char str[10] = "he12lo.";

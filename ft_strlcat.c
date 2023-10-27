@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 14:03:17 by pauldos-         #+#    #+#             */
-/*   Updated: 2023/10/22 15:06:36 by psergiopr        ###   ########.fr       */
+/*   Updated: 2023/10/27 14:14:54 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 /*
 int	main (void)
 {
-	char	str1[] = "My name is Lucas ";
+	char	str1[] = "My name is Luka ";
 	char	str2[] = "And i am a musitian";
 	unsigned int	size = 40;
 	int	a = myft_strlcat(str1, str2, size);

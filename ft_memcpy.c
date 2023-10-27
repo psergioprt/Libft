@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 09:58:55 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/10 10:25:47 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/27 13:55:58 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/*#include <stdio.h>
+/*
 #include <string.h>
 
 int	main(void)
