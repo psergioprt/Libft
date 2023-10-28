@@ -22,7 +22,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
-/*
+
 void	print_list(t_list *lst)
 {
 	while (lst != NULL)
@@ -65,7 +65,8 @@ int	main(void)
 	{
 		t_list *temp = head;
 		head = head->next;
+		free(temp->content);
 		free(temp);	
 	}
 	return (0);
-}*/
+}
