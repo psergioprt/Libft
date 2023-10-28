@@ -28,3 +28,23 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (size);
 }
+/*
+int	main(void)
+{
+	t_list *head = NULL;
+	int	i = 5;
+	int	*data;
+
+	while (i >= 2)
+	{
+		t_list *new_node = (t_list *)malloc(sizeof(t_list));
+		data = (int *)malloc(sizeof(int));
+		*data = i;	
+		new_node->content = data;
+		new_node->next = NULL;
+		ft_lstadd_front(&head, new_node);
+		--i;
+	}
+	printf("%d", ft_lstsize(head));
+	return (0);
+}*/
