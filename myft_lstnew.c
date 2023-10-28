@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   myft_lstnew.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 13:17:50 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 13:18:19 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/28 11:55:09 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *new_node;
+	t_list	*new_node;
+
 	new_node = (t_list *)malloc(sizeof(t_list));
 	if (new_node == NULL)
 		return (NULL);
@@ -22,7 +23,7 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
-
+/*
 void	lst_print(t_list *head)
 {
 	while (head != NULL)
@@ -49,4 +50,4 @@ int	main (void)
 	free(node1);
 	free(node2);
 	return (0);
-}
+}*/

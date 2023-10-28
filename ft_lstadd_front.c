@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 09:10:50 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/28 13:18:19 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/28 12:24:50 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	if (*lst == NULL)
 	{
 		*lst = new;
-		return;
+		return ;
 	}
 	new->next = *lst;
 	*lst = new;
 }
-
+/*
 void	print_list(t_list *lst)
 {
 	while (lst != NULL)
@@ -68,4 +68,4 @@ int	main(void)
 		free(temp);	
 	}
 	return (0);
-}
+}*/

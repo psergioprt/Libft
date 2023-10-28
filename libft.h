@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 12:59:41 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 11:15:09 by psergiopr        ###   ########.fr       */
+/*   Updated: 2023/10/28 12:22:55 by psergiopr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct s_list
 }					t_list;
 
 t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 
 void	ft_bzero(void *s, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
