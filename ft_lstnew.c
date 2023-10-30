@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 13:17:50 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 13:18:19 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/30 10:57:48 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
-/*
-void	printList(t_list *head)
+
+/*void	printList(t_list *head)
 {
 	while (head != NULL)
 	{
