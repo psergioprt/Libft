@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:55:37 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/31 09:13:32 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 10:50:55 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_lst);
 }
-
+/*
 // Function to print the content of a linked list
 void print_list(t_list *lst)
 {
@@ -76,7 +76,7 @@ int main()
     }
 
     // Use ft_lstmap to create a new list with the modified content
-    t_list *new_lst = ft_lstmap(lst, append_test, free_content);
+    t_list *new_lst = ft_lstmap(lst, &append_test, &free_content);
 
     // Print the new linked list
     printf("Modified list: ");
@@ -87,4 +87,4 @@ int main()
     ft_lstclear(&new_lst, free_content);
 
     return 0;
-}
+}*/

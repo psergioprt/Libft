@@ -6,9 +6,14 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 14:44:25 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 13:49:13 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 11:57:53 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: isprint()
+checks for any printable character including space.
+*/
 
 #include "libft.h"
 

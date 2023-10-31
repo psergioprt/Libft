@@ -6,9 +6,20 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 14:54:21 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 14:25:50 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 12:52:33 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: tolower()
+This function convert uppercase letters to lowercase.
+
+If  c is an uppercase letter, tolower() returns its lowercase equivalent, 
+if a lowercase repre sentation exists in the current locale.  
+Otherwise, it returns  c.
+If c is neither an unsigned char value nor EOF, the behavior of these functions 
+is undefined.
+*/
 
 #include "libft.h"
 

@@ -6,11 +6,17 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 15:26:27 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 13:57:01 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 12:04:53 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+DESCRIPTION: memset()
+The  memset() function fills the first n bytes of the memory area 
+pointed to by s with the constant byte c.
+*/
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -48,7 +54,5 @@ int	main (void)
 	puts (p);
 	//https://stackoverflow.com/questions/18851835/
 	//create-my-own-memset-function-in-c
-
-
 	return (0);
 }*/

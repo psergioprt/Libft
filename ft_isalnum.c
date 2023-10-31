@@ -6,9 +6,15 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 11:39:51 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/09 11:41:03 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 11:55:13 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: isalnum()
+checks for an alphanumeric character; it is equivalent to 
+(isalpha(c) || isdigit(c)).
+*/
 
 #include "libft.h"
 

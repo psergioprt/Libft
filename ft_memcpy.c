@@ -6,9 +6,23 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 09:58:55 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 13:55:58 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 12:26:19 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: memcpy()
+The  memcpy() function copies n bytes from memory area src to memory area dest.
+The memory areas must not overlap.  Use memmove(3) if the memory areas do 
+overlap.
+memcpy() and memmove() are both standard C-language library functions used to 
+copy blocks of memory between different locations. The main difference between 
+memcpy() and memmove() is in how they handle overlapping memory regions. When 
+copying memory, memcpy assumes that the source and destination memory regions 
+do not overlap, and will produce undefined behavior if they do. In contrast, 
+memmove() is designed to handle overlapping memory regions and will copy the 
+memory correctly regardless of whether the regions overlap or not.
+*/
 
 #include "libft.h"
 

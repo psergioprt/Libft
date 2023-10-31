@@ -6,9 +6,15 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 15:52:48 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 13:47:15 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 11:54:02 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: isascii()
+checks whether c is a 7-bit unsigned char value that fits into the ASCII 
+character set.
+*/
 
 #include "libft.h"
 

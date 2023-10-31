@@ -6,9 +6,16 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 10:57:04 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/13 11:54:25 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 13:31:28 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: atoi()
+The  atoi() function converts the initial portion of the string pointed to by
+nptr to int. The behavior is the same as strtol(nptr, NULL, 10); except that 
+atoi() does not detect errors.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,19 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 09:37:53 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 14:03:11 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 13:00:08 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: strchr()
+The  strchr()  function  returns  a  pointer  to the first occurrence of the 
+character c in the string s.
+Here "character" means "byte"; these functions do not work with wide or 
+multibyte characters.
+*/
+
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

@@ -6,9 +6,15 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 14:51:08 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 14:16:31 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 12:02:40 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: strlen()
+The strlen() function calculates the length of the string pointed to by s, 
+excluding the terminating null byte ('\0').
+*/
 
 #include "libft.h"
 

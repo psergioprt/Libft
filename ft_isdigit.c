@@ -6,9 +6,14 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 11:14:41 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 13:48:42 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 11:47:09 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: isdigit()
+checks for a digit (0 through 9).
+*/
 
 #include "libft.h"
 

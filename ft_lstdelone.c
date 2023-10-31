@@ -6,11 +6,16 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 11:51:53 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/30 12:09:22 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 13:33:31 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*void del_data(void *content)
+{
+    free(content);
+}*/
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
@@ -20,3 +25,48 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	free(lst);
 	lst = NULL;
 }
+
+/*typedef struct s_data
+{
+    int value;
+} t_data;*/
+
+/*int	main(void)
+{
+	t_list *elem = ft_lstnew("String");
+	ft_lstdelone(elem, del_data);
+}
+*/
+/*
+int main()
+{
+    t_list *myList = NULL;
+
+    t_data *data1 = malloc(sizeof(t_data));
+    data1->value = 42;
+
+    t_data *data2 = malloc(sizeof(t_data));
+    data2->value = 84;
+
+    ft_lstadd_back(&myList, ft_lstnew(data1));
+    ft_lstadd_back(&myList, ft_lstnew(data2));
+
+    printf("Antes de limpar:\n");
+    t_list *current = myList;
+    while (current != NULL)
+    {
+        printf("%d\n", ((t_data *)(current->content))->value);
+        current = current->next;
+    }
+
+   ft_lstdelone(myList, del_data);
+
+    printf("\nDepois de limpar:\n");
+    current = myList;
+    while (current != NULL)
+   {
+        printf("%d\n", ((t_data *)(current->content))->value);
+        current = current->next;
+   }
+    return 0;
+}*/

@@ -6,9 +6,17 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 10:27:34 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 14:23:04 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/10/31 13:05:59 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: strrchr()
+The strrchr() function returns a pointer to the last occurrence of the character
+c in the string s.
+*/
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
