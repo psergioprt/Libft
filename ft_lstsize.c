@@ -6,9 +6,14 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 09:10:50 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/30 10:11:18 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:20:39 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: lstsize()
+Counts the number of nodes in a list.
+*/
 
 #include "libft.h"
 

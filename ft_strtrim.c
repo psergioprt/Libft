@@ -6,9 +6,15 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 11:24:12 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 14:24:03 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 12:54:05 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: strtrim()
+Allocates (with malloc(3)) and returns a new string, which is the result of 
+the concatenation of ’s1’ and ’s2’.   
+*/
 
 #include "libft.h"
 

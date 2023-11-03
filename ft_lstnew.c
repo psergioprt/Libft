@@ -6,9 +6,16 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 13:17:50 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/30 10:57:48 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:11:24 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: lstnew()
+Allocates (with malloc(3)) and returns a new node. The member variable ’content’
+is initialized with the value of the parameter ’content’. The variable ’next’ is 
+initialized to NULL.
+*/
 
 #include "libft.h"
 

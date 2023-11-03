@@ -6,9 +6,14 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 09:10:50 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/30 10:59:15 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:15:01 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: lstadd_front()
+Adds the node ’new’ at the beginning of the list.
+*/
 
 #include "libft.h"
 
@@ -22,7 +27,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
-
+/*
 void	print_list(t_list *lst)
 {
 	while (lst != NULL)
@@ -32,7 +37,7 @@ void	print_list(t_list *lst)
 	}
 	printf(" NULL\n");
 }
-/*
+
 int	main(void)
 {
 	t_list *head = NULL;

@@ -6,9 +6,14 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 13:58:35 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 14:29:57 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:05:03 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: putchar_fd()
+Outputs the character ’c’ to the given file descriptor.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,15 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:13:55 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/31 10:57:07 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:46:55 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: ft_lstclear()
+Deletes and frees the given node and every successor of that node, using the 
+function ’del’ and free(3). Finally, the pointer to the list must be set to NULL.
+*/
 
 #include "libft.h"
 

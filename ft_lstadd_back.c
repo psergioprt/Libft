@@ -6,9 +6,14 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 11:11:31 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/30 11:37:32 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:33:52 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: lstadd_back()
+Adds the node ’new’ at the end of the list.
+*/
 
 #include "libft.h"
 
@@ -26,8 +31,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		temp = temp->next;
 	temp->next = new;
 }
-
-/*void    print_list(t_list *lst)
+/*
+void    print_list(t_list *lst)
 {
         while (lst != NULL)
         {
@@ -73,5 +78,4 @@ int     main(void)
                 free(temp);
         }
         return (0);
-}
-*/
+}*/

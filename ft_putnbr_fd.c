@@ -6,9 +6,14 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 14:00:19 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 14:00:35 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:08:05 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: putnbr_fd
+Outputs the integer ’n’ to the given file descriptor.
+*/
 
 #include "libft.h"
 

@@ -6,12 +6,18 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:55:37 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/31 10:50:55 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 15:04:08 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+DESCRIPTION: lstmap()
+Iterates the list ’lst’ and applies the function ’f’ on the content of each node.
+Creates a new list resulting of the successive applications of the function ’f’.
+The ’del’ function is used to delete the content of a node if needed.
+*/
+
 #include "libft.h"
-#include <string.h>
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
@@ -38,53 +44,55 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (new_lst);
 }
 /*
-// Function to print the content of a linked list
-void print_list(t_list *lst)
+void *square_data(void *content)
 {
-    while (lst)
-    {
-        printf("%s ", (char *)lst->content);
-        lst = lst->next;
-    }
-    printf("\n");
+    int *value = (int *)content;
+    int *result = malloc(sizeof(int));
+    if (result)
+        *result = (*value) * (*value);
+    return result;
 }
 
-// Function to free the content of a node
-void free_content(void *content)
+void print_data(void *content)
+{
+    printf("%d\n", *((int *)content));
+}
+
+void free_data(void *content)
 {
     free(content);
 }
 
-// Test the ft_lstmap function
+typedef struct s_data
+{
+    int value;
+} t_data;
+
 int main()
 {
-    // Create a sample linked list
-    t_list *lst = ft_lstnew(strdup("Hello"));
-    lst->next = ft_lstnew(strdup("world"));
-    lst->next->next = ft_lstnew(strdup("!"));
+    t_list *myList = NULL;
 
-    // Print the original linked list
-    printf("Original list: ");
-    print_list(lst);
+    t_data *data1 = malloc(sizeof(t_data));
+    data1->value = 4;
 
-    // Define a function to append " test" to each string
-    void *append_test(void *content)
-    {
-        char *str = strdup(content);
-        strcat(str, " test");
-        return str;
-    }
+    t_data *data2 = malloc(sizeof(t_data));
+    data2->value = 7;
 
-    // Use ft_lstmap to create a new list with the modified content
-    t_list *new_lst = ft_lstmap(lst, &append_test, &free_content);
+    ft_lstadd_back(&myList, ft_lstnew(data1));
+    ft_lstadd_back(&myList, ft_lstnew(data2));
 
-    // Print the new linked list
-    printf("Modified list: ");
-    print_list(new_lst);
+    printf("Before applying ft_lstmap:\n");
+    ft_lstiter(myList, print_data);
 
-    // Free the original and modified lists
-    ft_lstclear(&lst, free_content);
-    ft_lstclear(&new_lst, free_content);
+    // Apply the square_data function with ft_lstmap
+    t_list *mappedList = ft_lstmap(myList, square_data, free_data);
+
+    printf("\nAfter applying ft_lstmap:\n");
+    ft_lstiter(mappedList, print_data);
+
+    // Free the original and mapped lists
+    ft_lstclear(&myList, free_data);
+    ft_lstclear(&mappedList, free_data);
 
     return 0;
 }*/

@@ -6,9 +6,14 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 13:59:26 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 13:59:44 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:06:45 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: putendl_fd()
+Outputs the string ’s’ to the given file descriptor followed by a newline.
+*/
 
 #include "libft.h"
 

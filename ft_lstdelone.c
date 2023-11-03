@@ -6,16 +6,18 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 11:51:53 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/31 13:33:31 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 14:26:25 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+DESCRIPTION: lstdelone()
+Takes as a parameter a node and frees the memory of the node’s content using the
+function ’del’ given as a parameter and free the node. The memory of ’next’ must
+not be freed.
+*/
 
-/*void del_data(void *content)
-{
-    free(content);
-}*/
+#include "libft.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
@@ -25,19 +27,17 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	free(lst);
 	lst = NULL;
 }
+/*
+void del_data(void *content)
+{
+    free(content);
+}
 
-/*typedef struct s_data
+typedef struct s_data
 {
     int value;
-} t_data;*/
+} t_data;
 
-/*int	main(void)
-{
-	t_list *elem = ft_lstnew("String");
-	ft_lstdelone(elem, del_data);
-}
-*/
-/*
 int main()
 {
     t_list *myList = NULL;
@@ -59,7 +59,12 @@ int main()
         current = current->next;
     }
 
-   ft_lstdelone(myList, del_data);
+    if (myList != NULL)
+    {
+	    t_list *temp = myList;
+	    myList = myList->next;
+	    ft_lstdelone(temp, del_data);
+    }
 
     printf("\nDepois de limpar:\n");
     current = myList;

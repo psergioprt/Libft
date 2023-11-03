@@ -6,7 +6,7 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 07:54:57 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/31 13:34:21 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 12:35:20 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 int	main(void)
 {
-	char s1[] = "My name is Lucas";
-	char s2[] = "My Name is Lucas";
+	char s1[] = "My name is Luka";
+	char s2[] = "My Name is Luka";
 	int	myfunc = ft_memcmp(s1, s2, 5);
 	int	sysfunc = memcmp(s1, s2, 5);
 

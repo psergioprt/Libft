@@ -2,14 +2,19 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                          if (n < 0)
-		return (-n);                          +:+ +:+         +:+     */
+/*                                                    +:+ +:+         +:+     */
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/26 09:00:14 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/26 10:26:01 by pauldos-         ###   ########.fr       */
+/*   Created: 2023/11/03 15:14:38 by pauldos-          #+#    #+#             */
+/*   Updated: 2023/11/03 15:15:20 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: itoa()
+Allocates (with malloc(3)) and returns a string representing the integer 
+received as an argument. Negative numbers must be handled.
+*/
 
 #include "libft.h"
 

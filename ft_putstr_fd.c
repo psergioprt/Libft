@@ -6,9 +6,14 @@
 /*   By: pauldos- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 14:01:00 by pauldos-          #+#    #+#             */
-/*   Updated: 2023/10/27 14:01:06 by pauldos-         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:04:16 by pauldos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+DESCRIPTION: putstr_fd()
+Outputs the string ’s’ to the given file descriptor.
+*/
 
 #include "libft.h"
 
